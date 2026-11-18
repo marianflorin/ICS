@@ -143,10 +143,10 @@ class RecurrenceRule
     /**
      * Setting UNTIL will remove a COUNT if set - you cannot have both
      *
-     * @param \DateTime $until = null
+     * @param ?\DateTime $until = null
      * @return \Jsvrcek\ICS\Model\Recurrence\RecurrenceRule
      */
-    public function setUntil(\DateTime $until = null)
+    public function setUntil(?\DateTime $until = null)
     {
         $this->until = $until;
         $this->count = null;
